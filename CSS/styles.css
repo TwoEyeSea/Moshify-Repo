@@ -160,6 +160,13 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--search {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+  padding-right: 15px;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -168,4 +175,55 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+
+.button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 400px;
+  height: 65px;
+  border-radius: 35px;
+  margin: 10px 0px 0px 10px;
+  border: none;
+}
+
+.bttn--primary {
+  background: var(--color-headings);
+  color: #fff;
+  border: none;
+}
+
+.bttn--clear {
+  background: none;
+  color: var(--color-headings);
+  border: 2px var(--color-headings) solid;
+}
+
+.bttn--search {
+  align-items: center;
+  background: var(--color-accent);
+  color: #fff;
+  display: inline-flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding: 20px 50px 20px 25px;
+  width: auto;
+}
+
+.bttn--accent {
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 400px;
+    height: 55px;
+  }
 }
