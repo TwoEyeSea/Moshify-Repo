@@ -179,51 +179,76 @@ a {
 
 /* Buttons */
 
-.button {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  width: 400px;
-  height: 65px;
-  border-radius: 35px;
+.btn {
+  border-radius: 40px;
+  border: none;
   margin: 10px 0px 0px 10px;
-  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.bttn--primary {
-  background: var(--color-headings);
+.btn--primary {
+  background: var(--color-primary);
   color: #fff;
-  border: none;
-}
-
-.bttn--clear {
-  background: none;
-  color: var(--color-headings);
   border: 2px var(--color-headings) solid;
 }
 
-.bttn--search {
-  align-items: center;
+.btn--primary:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+  border: none;
+}
+
+.btn--secondary:hover {
+  background: #03c5ee;
+}
+
+.btn--accent {
   background: var(--color-accent);
   color: #fff;
+}
+
+.btn--accent:hover {
+  background: #ff623a;
+}
+
+.btn.btn--search {
+  align-items: center;
   display: inline-flex;
   font-size: 1.5rem;
   justify-content: center;
-  padding: 20px 50px 20px 25px;
+  padding: 2rem 5rem 2rem 2.5rem;
   width: auto;
 }
 
-.bttn--accent {
-  background: var(--color-accent);
-  color: #fff;
-  font-weight: 700;
-}
-
 @media screen and (min-width: 1024px) {
-  .button {
-    font-size: 1.4rem;
-    font-weight: 600;
-    width: 400px;
+  .btn--container {
+    width: 260px;
     height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .btn--secondaryContainer {
+    width: 226px;
+    height: 62px;
+  }
+
+  .btn--accent {
+    height: 63px;
+    width: 190px;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
