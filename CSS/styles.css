@@ -122,6 +122,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -335,20 +336,55 @@ a {
   overflow: hidden;
 }
 
-/* .card__header {
-
-} */
-
 .card__body {
   padding: 2rem 3rem;
+  text-align: center;
 }
 
-.card--primary {
+.card__header {
+  padding: 2rem 3.5rem;
+}
+.card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
 }
 
-.card--secondary {
+.card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+
+/* Plans */
+
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.card__header .badge {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  display: block;
+  letter-spacing: 2px;
 }
