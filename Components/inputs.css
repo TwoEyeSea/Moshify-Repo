@@ -1,0 +1,52 @@
+/* Inputs section from styles.css, playing around with placing icons within buttons */
+
+.input {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+/* Many defined rules are nested here. High levels of specificity. */
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.input-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+.btn .icon-container {
+  height: auto;
+  width: auto;
+  padding-right: 10px;
+  background: none;
+}
+
+.btn .icon {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  fill: #fff;
+}

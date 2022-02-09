@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -179,13 +181,13 @@ a {
 }
 
 .icon-container {
+  align-items: center;
   background: #f3f9fa;
-  width: 64px;
-  height: 64px;
   border-radius: 100%;
   display: inline-flex;
+  height: 64px;
   justify-content: center;
-  align-items: center;
+  width: 64px;
 }
 
 /* Buttons */
@@ -193,14 +195,14 @@ a {
 .btn {
   border-radius: 40px;
   border: none;
-  margin: 10px 0px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.8rem;
-  padding: 2rem 3rem;
   cursor: pointer;
-  white-space: nowrap;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 10px 0px;
+  padding: 2rem 3rem;
   text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .btn--primary {
@@ -274,24 +276,79 @@ a {
 /* Inputs */
 
 .input {
-  padding: 1.5rem 3.5rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   color: var(--color-headings);
   font-size: 2rem;
   outline: none;
-}
-
-.input:focus {
-  border: 2px solid var(--color-headings);
+  padding: 1.5rem 3.5rem;
 }
 
 ::placeholder {
   color: #cdcbd7;
 }
 
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.input-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+.btn .icon-container {
+  height: auto;
+  width: auto;
+}
+
+.btn .icon {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+}
+
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+/* .card__header {
+
+} */
+
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.card--secondary {
+  background: var(--color-secondary);
+  color: #fff;
 }
