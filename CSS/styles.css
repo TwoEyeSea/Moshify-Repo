@@ -135,7 +135,7 @@ a {
   }
 }
 
-/* Liss */
+/* Lists */
 
 .list {
   list-style: none;
@@ -150,10 +150,10 @@ a {
 
 .list--tick {
   list-style-image: url(../Images/tick.svg);
-  padding-left: 3rem;
+  padding-left: 3.5rem;
 }
 .list--tick .list__item {
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -200,7 +200,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 10px 0px;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -338,12 +338,12 @@ a {
 
 .card__body {
   padding: 2rem 3rem;
-  text-align: center;
 }
 
 .card__header {
   padding: 2rem 3.5rem;
 }
+
 .card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
@@ -356,10 +356,17 @@ a {
 
 /* Plans */
 
+.plan__container {
+  width: 49rem;
+  margin: 3rem;
+  box-sizing: border-box;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
   font-weight: 600;
+  font-size: 2.4rem;
 }
 
 .plan__price {
@@ -370,23 +377,79 @@ a {
   font-size: 2.4rem;
   font-weight: 300;
   opacity: 0.8;
+  margin-right: 2rem;
 }
 
 .card__header .badge {
   font-size: 1.6rem;
   font-weight: 700;
-  margin-left: 1rem;
 }
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
-.plan__description {
-  font-size: 2rem;
-  font-weight: 300;
-  display: block;
-  letter-spacing: 2px;
+.card--primary .badge--primary {
+  background: #126de4;
 }
 
+.plan__description {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.card--primary .plan__description {
+  opacity: 0.65;
+}
+
+.plan .list__item {
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.card--secondary .btn {
+  margin-top: 3.5rem;
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../Images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  right: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .plan__container {
+    width: 35rem;
+  }
+
+  .plan__name {
+    font-size: 1.4rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+    margin-right: 1.7rem;
+  }
+
+  .card__header .badge {
+    font-size: 1.2rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
+}
 /* Need to add list elements and button next */
