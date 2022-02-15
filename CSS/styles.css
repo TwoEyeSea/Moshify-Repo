@@ -1,12 +1,12 @@
 :root {
+  --border-radius: 30px;
+  --color-accent: #ff3400;
+  --color-body-darker: #5c5577;
+  --color-body: #918ca4;
+  --color-border: #ccc;
+  --color-headings: #1b0760;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
-  --color-border: #ccc;
-  --border-radius: 30px;
 }
 
 *,
@@ -171,8 +171,17 @@ a {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: #fff;
 }
 
 .icon--search {
@@ -192,6 +201,9 @@ a {
   width: 64px;
 }
 
+.icon-container--accent {
+  background: var(--color-accent);
+}
 /* Buttons */
 
 .btn {
@@ -541,5 +553,40 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* testimonials*/
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 95%;
+}
+
+.testimonial__image > img {
+  width: 100%;
+  align-self: baseline;
+  object-fit: cover;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
