@@ -715,3 +715,43 @@ a {
   max-width: 1140px;
   margin: 0 auto; /*maring of 0 and auto allows for 0 vertical margin and automatic, equally distributed horizontal margin*/
 }
+
+/* navigation bar */
+
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  opacity: 0.8;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgb(229, 229, 229);
+}
+
+.nav__item > a:visited {
+  color: white;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+}
