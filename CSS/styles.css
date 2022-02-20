@@ -361,7 +361,7 @@ a {
 .card__body {
   display: flex;
   flex-direction: column;
-  padding: 4rem 3rem 3.5rem;
+  padding: 3.5rem 3rem;
   min-height: 415px;
   justify-content: space-between;
 }
