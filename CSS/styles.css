@@ -154,9 +154,16 @@ a {
   list-style-image: url(../Images/tick.svg);
   padding-left: 3.5rem;
 }
+
 .list--tick .list__item {
   padding-left: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.list__plan {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(65px, 1fr));
+  align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -352,7 +359,11 @@ a {
 }
 
 .card__body {
-  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 3rem 3.5rem;
+  min-height: 415px;
+  justify-content: space-between;
 }
 
 .card__header {
@@ -425,10 +436,6 @@ a {
   font-weight: 500;
 }
 
-.card--secondary .btn {
-  margin-top: 3.5rem;
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -440,6 +447,11 @@ a {
   right: 5%;
   top: -6px;
   width: 40px;
+}
+
+.plan .btn {
+  margin: 0;
+  padding: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .plan__container {
@@ -840,4 +852,20 @@ a {
     font-size: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
+}
+
+/* plans block */
+
+.block-plans__option {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+}
+
+.block-plans__option__item {
+  transition: transform 0.2s;
+}
+
+.block-plans__option__item:hover {
+  transform: scale(1.1);
 }
