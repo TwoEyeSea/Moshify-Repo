@@ -820,7 +820,8 @@ a {
 .block-domain .input-group {
   box-shadow: 0 0 30px 15px #e6ebee;
   border: 0;
-  margin: 4rem 0rem;
+  margin: 4rem auto;
+  max-width: 690px;
 }
 
 .block-domain__prices {
@@ -828,19 +829,15 @@ a {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
-  margin: auto;
+  margin: 0 auto;
   font-size: 2rem;
   font-weight: 600;
+  max-width: 730px;
 }
 
 @media screen and (min-width: 768px) {
   .block-domain__prices {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    white-space: wrap;
-    height: 5rem;
-  }
-  .block-domain__prices__items {
+    font-size: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
 }
