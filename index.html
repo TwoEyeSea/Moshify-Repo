@@ -16,62 +16,47 @@
   </head>
 
   <body">
-  <section class="block block--dark block--skewed-right block-showcase">
+  <section class="block">
     <header class="block__header">
-      <h2>User-Friendly Control Panel</h2>
+      <h2>What our Customers are Saying</h2>
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptates!</P>
     </header>
-    <div class="container grid grid--1x2">
-      <picture class="block-showcase__image">
-        <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
-        <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
-        <img src="images/ipad.png" alt="an image of an ipad screen" />
-      </picture>
-      <ul class="list">
-        <li class="media block-showcase__media">
-          <div class="media__image">
-            <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#snap"></use>
-            </svg>
+    <div class="container">
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image">
+            <img src="Images/testimonial.jpg" alt="A happy, smiling customer" />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon--small icon--white">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
           </div>
-          <div class="media__body">
-            <h3 class="media__title">Easy Start & Managed Updates</h3>
-            <p>
-              Our clud plans include easy onboarding for new and existing sites and managed WortPress and WooCommenrce
-              auto-updates.
+      
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aut eos, adipisci ut atque vel rerum voluptatum
+              explicabo totam incidunt facilis ad officia voluptatibus veniam nostrum vero? Expedita, magni nulla?
             </p>
-          </div>
-        </li>
-        <li class="media block-showcase__media">
-          <div class="media__image">
-            <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#growth"></use>
-            </svg>
-          </div>
-          <div class="media__body">
-            <h3 class="media__title">Stagin, Git & WP-CLI</h3>
-            <p>
-              We make your WordPress and WooCommerce development flow easier with a convenient staging tool and Git and
-              WP-CLI integration.
-            </p>
-          </div>
-        </li>
-        <li class="media block-showcase__media">
-          <div class="media__image">
-            <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#wordpress"></use>
-            </svg>
-          </div>
-          <div class="media__body">
-            <h3 class="media__title">Dynamic Caching & More</h3>
-            <p>
-              Speed up your WordPress and Woo sites with our SG Optimizer plugin through smart dynamic caching and
-              multiple other performance optimizations.
-            </p>
-          </div>
-        </li>
-      </ul>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body media__quote">
+                  <h3 class="media__title quote__author">Mad Lad Mike</h3>
+                  <p class="quote__organization">Moroney Company Ceo</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
     </div>
   </section>
+
   </body>
 </html>
  
