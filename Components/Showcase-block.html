@@ -3,15 +3,13 @@
     <h2>User-Friendly Control Panel</h2>
   </header>
   <div class="container grid grid--1x2">
-    <div>
-      <picture>
-        <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
-        <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
-        <img class="block-showcase__image" src="images/ipad.png" alt="an image of an ipad screen" />
-      </picture>
-    </div>
-    <div>
-      <div class="media block-showcase__media">
+    <picture class="block-showcase__image">
+      <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
+      <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
+      <img src="images/ipad.png" alt="an image of an ipad screen" />
+    </picture>
+    <ul class="list">
+      <li class="media block-showcase__media">
         <div class="media__image">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#snap"></use>
@@ -24,8 +22,8 @@
             auto-updates.
           </p>
         </div>
-      </div>
-      <div class="media block-showcase__media">
+      </li>
+      <li class="media block-showcase__media">
         <div class="media__image">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#growth"></use>
@@ -38,8 +36,8 @@
             WP-CLI integration.
           </p>
         </div>
-      </div>
-      <div class="media block-showcase__media">
+      </li>
+      <li class="media block-showcase__media">
         <div class="media__image">
           <svg class="icon icon--primary">
             <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -52,7 +50,7 @@
             multiple other performance optimizations.
           </p>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
