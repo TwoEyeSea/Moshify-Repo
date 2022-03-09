@@ -724,7 +724,7 @@ a {
 }
 
 .collapsible--expanded .collapsible__content {
-  max-height: 100vh;
+  max-height: 100%;
   opacity: 1;
 }
 
@@ -1028,46 +1028,50 @@ a {
 }
 
 /*Footer*/
-.block-footer {
+.footer {
   background-color: #232323;
   height: 100%;
 }
 
-.block.block-footer {
+.footer {
   padding: var(--padding-vertical) 4.5rem;
 }
 
-.block-footer .collapsible {
+.footer__section {
   border-bottom: 2px solid #393939;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
-.block-footer .collapsible--expanded {
+.footer .collapsible--expanded {
   padding-bottom: 2.5rem;
 }
 
-.block-footer .collapsible__heading,
-.collapsible__content,
-.copyright {
+.footer .collapsible__content,
+.footer__copyright {
   color: #fff;
 }
 
-.block-footer .collapsible__heading {
+.footer__heading {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   line-height: 1.7;
   margin: 0;
 }
 
-.block-footer .collapsible__content {
+.footer__list {
   opacity: 0.5;
 }
 
-.block-footer .copyright {
-  opacity: 0.3;
+.footer__list a {
+  color: #fff;
 }
 
-.block-footer .list__item {
+.footer__copyright {
+  opacity: 0.3;
+  font-size: 2.1rem;
+}
+
+.footer .list__item {
   margin: 2.5rem 0;
 }
 
@@ -1084,15 +1088,39 @@ a {
 
 @media screen and (min-width: 1024px) {
   .footer__brand-image > img {
-    height: 4rem;
+    width: 100%;
+  }
+
+  .footer__section {
+    padding: 0;
   }
 
   .footer__brand {
     grid-column: 1/1;
     grid-row: 1/1;
+    margin-top: 0;
   }
 
-  .block-footer .collapsible {
+  .footer .collapsible {
     border-bottom: none;
+  }
+
+  .footer__list {
+    max-height: 100%;
+    /* TO DO: Consider implementing this as a universal rule for all img elements */
+    opacity: 1;
+    font-size: 1.5rem;
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
   }
 }
