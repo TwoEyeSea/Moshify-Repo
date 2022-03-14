@@ -15,27 +15,83 @@
     <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
   <body>
-    <section class="block container block-domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, corrupti!</p>
-      </header>
-      <div class="input-group">
-        <input type="text" class="input" placeholder="Enter domain name here..." />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="images/sprite.svg#search"></use>
-            </svg>Search
-        </button>
+    <footer class="footer block--dark block">
+      <div class="grid grid--1x5 container">
+        <section class="footer__section collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+      
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <ul class="list footer__list collapsible__content">
+            <li class="list__item"><a href="#">WordPress Hosting</a></li>
+            <li class="list__item"><a href="#">Free Automated WordPress</a></li>
+            <li class="list__item"><a href="#">Migrations</a></li>
+            <li class="list__item"><a href="#">Domain Names</a></li>
+            <li class="list__item"><a href="#">Monthly Web Hosting</a></li>
+          </ul>
+        </section>
+        <section class="footer__section collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+      
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>         
+          <ul class="list footer__list collapsible__content">
+            <li class="list__item"><a href="#">About</a></li>
+            <li class="list__item"><a href="#">Affiliates</a></li>
+            <li class="list__item"><a href="#">Blog</a></li>
+            <li class="list__item"><a href="#">Careers</a></li>
+            <li class="list__item"><a href="#">Community</a></li>
+            <li class="list__item"><a href="#">News</a></li>
+            <li class="list__item"><a href="#">Green Hosting</a></li>
+          </ul>         
+        </section>
+        <section class="footer__section collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+      
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+            <ul class="list footer__list collapsible__content">
+              <li class="list__item"><a href="#">Contact</a></li>
+              <li class="list__item"><a href="#">Knowledge Base</a></li>
+              <li class="list__item"><a href="#">Forums</a></li>
+              <li class="list__item"><a href="#">System Status</a></li>
+              <li class="list__item"><a href="#">Web Hosting</a></li>
+              <li class="list__item"><a href="#">DreamCompute</a></li>
+            </ul>
+        </section>
+        <section class="footer__section collapsible">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Domains</h2>
+      
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+            <ul class="list footer__list collapsible__content">
+              <li class="list__item"><a href="#">Domain Checker</a></li>
+              <li class="list__item"><a href="#">Domain Transfer</a></li>
+              <li class="list__item"><a href="#">Free Domain</a></li>
+              <li class="list__item"><a href="#">Careers</a></li>
+              <li class="list__item"><a href="#">XYZ Domain</a></li>
+              <li class="list__item"><a href="#">Cheap SSL Certificate</a></li>
+            </ul>
+        </section>
+        <div class="footer__brand">
+          <a class="footer__brand-image" href="/"><img src="Images/logo.svg" alt="#" /></a>
+          <p class="footer__copyright">Copyright &#169 2020 Alex</p>
+        </div>
       </div>
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com $9.26</span></li>
-        <li>.sg $7.91</li>
-        <li>.space $12.98</li>
-        <li>.info $14.15</li>
-        <li>.net $16.15</li>
-        <li>.xyz $10.15</li>
-      </ul>
-    </section>
+    </footer>
+   
+    <script src="js/main.js"></script>
   </body>
 </html>

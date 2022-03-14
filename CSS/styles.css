@@ -19,11 +19,12 @@
 html {
   font-size: 62.5%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: var(--color-body);
   position: absolute;
@@ -40,15 +41,15 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -61,13 +62,31 @@ p {
   text: #fff;
 }
 
+@media screen and (min-width: 450px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   h2 {
@@ -203,13 +222,6 @@ a {
   fill: #fff;
 }
 
-.icon--search {
-  fill: #fff;
-  width: 25px;
-  height: 25px;
-  padding-right: 15px;
-}
-
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -321,7 +333,7 @@ a {
   .btn {
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
   }
 }
 
@@ -544,7 +556,7 @@ a {
 
 .quote {
   color: var(--color-body-darker);
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: italic;
   font-weight: 500;
   line-height: 1.3;
@@ -567,7 +579,7 @@ a {
 }
 
 .quote .icon {
-  width: 50px;
+  width: 35px;
 }
 
 .quote__author {
@@ -579,6 +591,12 @@ a {
   font-size: 2rem;
   opacity: 0.4;
   font-weight: 400;
+}
+
+@media screen and (min-width: 450px) {
+  .quote .icon {
+    width: 50px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -640,6 +658,12 @@ a {
   right: -32px;
 }
 
+@media screen and (max-width: 450px) {
+  .testimonial__image > span {
+    transform: scale(0.6);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -656,6 +680,8 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+
+  margin: 0 auto;
 }
 
 .callout--primary {
@@ -664,7 +690,7 @@ a {
 
 .callout__content {
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 .callout__content {
@@ -682,6 +708,11 @@ a {
 }
 .callout--primary .btn--secondary {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 450px) {
+  .callout {
+    transform: scale(0.7);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -734,7 +765,7 @@ a {
 
 /* blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 2rem;
   padding: var(--padding-vertical) 1rem;
 }
 
@@ -760,12 +791,12 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -778,6 +809,16 @@ a {
   .block {
     padding: var(--padding-vertical) 2rem;
   }
+
+  .block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+  }
+
+  .block--skewed-left {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+  }
 }
 /* navigation bar */
 
@@ -785,7 +826,7 @@ a {
   background: #000;
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2.5rem;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -831,6 +872,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    padding: 0 1rem;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -906,6 +951,10 @@ a {
   max-width: 700px;
 }
 
+.block__header > h2 {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 450px) {
   .block-domain__prices {
     grid-template-columns: repeat(3, 1fr);
@@ -955,7 +1004,7 @@ a {
 
 .block-features .grid {
   gap: 4rem 2rem;
-  margin-bottom: 12rem;
+  margin-bottom: 4rem;
 }
 
 .feature .media {
@@ -1007,9 +1056,6 @@ a {
 }
 
 /* showcase block */
-.block__header .block-showcase__media:last-of-type {
-  margin-bottom: 12rem;
-}
 
 .block-showcase__image > img {
   width: 100%;
@@ -1023,7 +1069,19 @@ a {
   color: #fff;
 }
 
+.block-showcase__media {
+  margin-bottom: 6rem;
+}
+
+.block-showcase__media:last-of-type {
+  margin-bottom: 12rem;
+}
+
 @media screen and (min-width: 768px) {
+  .showcase__content {
+    margin-bottom: 7rem;
+  }
+
   .block-showcase .grid {
     grid-template-columns: 50% 50%;
   }
@@ -1060,9 +1118,14 @@ a {
   padding: var(--padding-vertical) 4.5rem;
 }
 
+.footer__sections {
+  margin-top: 12rem;
+}
+
 .footer__section {
   border-bottom: 2px solid #393939;
   padding: 2rem 0;
+  overflow: wrap;
 }
 
 .footer .collapsible--expanded {
@@ -1075,53 +1138,69 @@ a {
 }
 
 .footer__heading {
-  text-transform: uppercase;
+  font-size: 2.5rem;
   letter-spacing: 2.5px;
   line-height: 1.7;
   margin: 0;
-}
-
-.footer__list {
-  opacity: 0.5;
+  text-transform: uppercase;
 }
 
 .footer__list a {
   color: #fff;
+  opacity: 0.5;
+}
+
+.footer__list a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgb(229, 229, 229);
+  opacity: 1;
 }
 
 .footer__copyright {
   opacity: 0.3;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
 }
 
 .footer .list__item {
-  margin: 2.5rem 0;
+  word-wrap: break-word;
 }
 
 .footer__brand {
+  display: flex;
+  flex-direction: column;
   justify-self: center;
   text-align: center;
   margin-top: 6rem;
 }
 
-.footer__brand-image > img {
-  height: 9rem;
-  margin: rem 0 2rem 0;
+.footer__brand-image img {
+  max-width: 230px;
 }
 
+@media screen and (min-width: 450px) {
+  .footer__copyright {
+    opacity: 0.3;
+    font-size: 2.1rem;
+  }
+
+  .footer__heading {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .footer__brand-image > img {
-    width: 100%;
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
   .footer__section {
-    padding: 0;
+    padding: 2rem;
   }
 
   .footer__brand {
     grid-column: 1/1;
     grid-row: 1/1;
     margin-top: 0;
+    padding: 2rem;
   }
 
   .footer .collapsible {
@@ -1146,4 +1225,10 @@ a {
   .footer__copyright {
     font-size: 1.5rem;
   }
+}
+
+/* Callout  Block */
+
+.callout__block {
+  transform: translateY(12rem);
 }
