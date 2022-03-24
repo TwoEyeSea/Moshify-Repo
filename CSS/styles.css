@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
   color: var(--color-body);
@@ -1230,5 +1230,5 @@ a {
 /* Callout  Block */
 
 .callout__block {
-  transform: translateY(12rem);
+  transform: translateY(8rem);
 }
