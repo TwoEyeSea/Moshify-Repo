@@ -58,8 +58,8 @@ p {
 }
 
 ::selection {
-  background: --color-primary;
-  text: #fff;
+  background: var(--color-primary);
+  color: #fff;
 }
 
 @media screen and (min-width: 450px) {
@@ -368,7 +368,7 @@ a {
 
 .input-group .btn {
   margin: 4px;
-  font-size: 1;
+  font-size: 1.5rem;
 }
 
 .btn .icon-container {
@@ -1061,10 +1061,6 @@ a {
   width: 100%;
 }
 
-.block-showcase__media {
-  margin-bottom: 3.5rem 0rem;
-}
-
 .block-showcase .media__title {
   color: #fff;
 }
@@ -1125,7 +1121,6 @@ a {
 .footer__section {
   border-bottom: 2px solid #393939;
   padding: 2rem 0;
-  overflow: wrap;
 }
 
 .footer .collapsible--expanded {
